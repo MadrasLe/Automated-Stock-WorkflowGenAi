@@ -37,7 +37,7 @@ GenAI-Stock-Pipeline/
 │   ├── upscale.py       
 │   └── tagger.py      
 │── notebook/
-│   ├── notebook.ipynb 
+│   └── notebook.ipynb 
 ├── requirements.txt     # Dependencies
 ├── README.md            # Documentation
 └── LICENSE      # MIT License
