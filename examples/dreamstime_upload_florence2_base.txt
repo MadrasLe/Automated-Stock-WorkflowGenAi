@@ -1,0 +1,67 @@
+Filename: up_image_SDXL_turbo_5.png
+Image Name: The image is a landscape photograph of a rocky coastline at sunset. the sky is generated
+Descriptions: The image is a landscape photograph of a rocky coastline at sunset. the sky is filled with orange and yellow hues, with the sun setting in the background. the water is a deep blue, with small waves crashing onto the rocks. on the left side of the image, there is a rocky cliff with patches of green vegetation. in the foreground, a seagull is flying low over the water, its wings spread wide. the overall mood of the photograph is peaceful and serene.
+Keywords: wings, foreground, yellow, sun, seagull, green vegetation, rocky cliff, green, overall, background, orange yellow hues, orange, small, deep, vegetation, rocky coastline, waves, rocky, coastline, small waves, overall mood, image, peaceful, serene, patches, rocks, photograph, landscape, cliff, deep blue, landscape photograph, hues, sky, mood, water, blue, left, sunset
+Category 1: 0
+Category 2: 0
+Category 3: 0
+Free: 0
+W-EL: 1
+P-EL: 1
+SR-EL: 1
+SR-Price: 100
+
+Filename: up_image_SDXL_turbo_3.png
+Image Name: The image is a landscape photograph of a lake with several sailboats anchored in the generated
+Descriptions: The image is a landscape photograph of a lake with several sailboats anchored in the water. the lake is calm and still, reflecting the trees on the left side of the image. the trees are covered in autumn foliage, with their leaves changing colors in shades of orange, yellow, and red. the sky is a hazy orange color, and the sun is setting in the background, casting a warm glow over the scene. the water is still and reflects the trees and the boats, creating a mirror-like effect. the overall mood of the photograph is peaceful and serene.
+Keywords: autumn, like, colors, glow, hazy, yellow, sun, warm, overall, background, shades, sailboats, scene, effect, orange, mirror, trees, calm, warm glow, autumn foliage, overall mood, image, peaceful, serene, foliage, color, photograph, red, landscape, boats, landscape photograph, sky, mood, water, hazy orange color, lake, left, leaves, mirror like effect
+Category 1: 0
+Category 2: 0
+Category 3: 0
+Free: 0
+W-EL: 1
+P-EL: 1
+SR-EL: 1
+SR-Price: 100
+
+Filename: up_image_SDXL_turbo_4.png
+Image Name: The image shows a busy street market at night. the market is filled with colorful generated
+Descriptions: The image shows a busy street market at night. the market is filled with colorful lanterns hanging from the ceiling, creating a vibrant and lively atmosphere. the lanterns are in various colors, including red, orange, green, blue, and yellow, and are arranged in a way that creates a canopy over the market. people are walking around and browsing the stalls, and some are carrying bags. the street is lined with shops and stalls on both sides, and the sky is dark, indicating that it is nighttime. the overall mood of the image is lively and bustling.
+Keywords: colors, yellow, colorful lanterns, bustling, bags, stalls, green, ceiling, atmosphere, vibrant, canopy, overall, people, way, market, vibrant lively atmosphere, busy street market, orange, lively, overall mood, image, street, shops, nighttime, night, lanterns, red, sides, sky, dark, busy, mood, colorful, blue
+Category 1: 0
+Category 2: 0
+Category 3: 0
+Free: 0
+W-EL: 1
+P-EL: 1
+SR-EL: 1
+SR-Price: 100
+
+Filename: up_image_SDXL_turbo_1.png
+Image Name: The image shows a man sitting at a desk in an office with a large generated
+Descriptions: The image shows a man sitting at a desk in an office with a large window that offers a panoramic view of the city skyline. the man is wearing a white shirt, black pants, and glasses, and is sitting on a black office chair. he is looking out at the city with a serious expression on his face. on the desk, there is a lamp, a plant, and a pair of shoes. the room is bright and airy, with natural light coming in from the large window. the floor is made of light-colored wood, and there are two potted plants on either side of the desk. the overall mood of the image is peaceful and contemplative.
+Keywords: city skyline, window, colored, man, shoes, light colored wood, potted plants, pants, airy, natural light, glasses, plant, overall, light, pair, panoramic view, natural, white, chair, face, potted, plants, office, skyline, black office chair, contemplative, overall mood, image, peaceful, floor, white shirt, wood, view, large window, room, bright, large, expression, desk, panoramic, shirt, black, mood, lamp, city, black pants
+Category 1: 0
+Category 2: 0
+Category 3: 0
+Free: 0
+W-EL: 1
+P-EL: 1
+SR-EL: 1
+SR-Price: 100
+
+Filename: up_image_SDXL_turbo_2.png
+Image Name: The image is a digital illustration of a futuristic city at night. the city is generated
+Descriptions: The image is a digital illustration of a futuristic city at night. the city is filled with tall buildings and skyscrapers, and the sky is dark and cloudy. in the center of the image, there is a tall skyscraper with a unique design. the skyscraper is lit up with bright lights, creating a contrast with the dark sky.
+
+in front of the skyscraper, there are two cars driving on a highway, one black and one white. the black car is in the foreground, and it appears to be moving at a high speed. the white car is slightly ahead of the black car, and there are long, blurred lines of light trails behind it, indicating that it is moving quickly. the image is taken from a low angle, giving a sense of depth and perspective.
+Keywords: skyscraper, foreground, tall buildings, speed, center, low angle, cloudy, perspective, unique, white car, illustration, tall, low, light, sense, black car, white, bright lights, skyscrapers, dark sky, light trails, design, buildings, long blurred lines, high, contrast, trails, digital, blurred, tall skyscraper, lights, cars, image, futuristic city, depth, long, night, angle, high speed, car, bright, sky, dark, black, digital illustration, highway, lines, futuristic, city, unique design
+Category 1: 0
+Category 2: 0
+Category 3: 0
+Free: 0
+W-EL: 1
+P-EL: 1
+SR-EL: 1
+SR-Price: 100
+
