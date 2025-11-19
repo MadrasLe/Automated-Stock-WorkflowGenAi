@@ -1,39 +1,89 @@
-# Intelligent Automation for Dreamstime Uploads
+# GenAI Stock Pipeline 🚀
 
-**Overview:**
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-red)
+![HuggingFace](https://img.shields.io/badge/Hugging%20Face-Transformers-yellow)
+![License](https://img.shields.io/badge/License-MIT-green)
+[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat&logo=jupyter&logoColor=white)](notebooks/)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](notebooks/)
 
-This project consists of a Python script designed to significantly automate the process of preparing images for upload to the Dreamstime platform. Its main feature is the intelligent analysis of images using artificial intelligence to automatically generate detailed descriptions, concise titles, and a relevant set of keywords. The script organizes this information into a formatted text file, ready for bulk upload processes, saving considerable time and effort for photographers and content creators.
+**An end-to-end automated pipeline for creating, upscaling, and tagging stock photography assets using State-of-the-Art Generative AI.**
 
-**Key Features and Technologies Used:**
+##  Overview
 
-* **AI-based Image Analysis:**
-  The script leverages the BLIP (Vision-and-Language Pre-training with Transformer) model from Hugging Face to analyze the visual content of images and generate descriptive captions. BLIP was chosen for its efficiency and strong performance, making it a viable option even for machines with limited computational resources.
+This project provides a comprehensive suite of tools to automate the lifecycle of stock image production. By orchestrating Large Language Models (LLMs) and Vision-Language Models (VLMs), it eliminates the manual bottleneck of prompting and metadata tagging.
 
-* **Intelligent Keyword Generation:**
-  Using the spaCy library, the script processes the BLIP-generated descriptions to extract nouns, adjectives, and relevant n-grams, serving as effective keywords for indexing and discovering images.
+**The Pipeline:**
+1.  **Ideation & Prompting:** Uses **Llama 3** to create prompts.
+2.  **Generation:** Uses **Stable Diffusion XL (SDXL)** (Base + Refiner) to generate images.
+3.  **Enhancement:** Applies Deep Learning-based Super-Resolution (**PanModel**) to upscale images for commercial quality.
+4.  **Analysis & SEO:** Uses Microsoft's **Florence-2** to analyze images and generate CSV metadata (Title, Description, Keywords) compatible with stock platforms like Dreamstime.
 
-* **Performance Optimization with Threading:**
-  To speed up the processing of large image volumes, the script implements the `concurrent.futures.ThreadPoolExecutor` library. This parallel processing technique allows multiple images to be analyzed simultaneously, significantly reducing the total execution time—especially useful for extensive collections.
+## Architecture & Models
 
-* **Model Flexibility (Considerations):**
-  Although this project uses BLIP for its balanced performance and hardware requirements, it is important to note that more advanced models like BLIP-2 or GIT could also be integrated to potentially generate even richer descriptions. However, these models generally demand greater computational power, which can impact performance on less powerful PCs. The script’s architecture allows for future adaptations to incorporate different image analysis models as needed and as resources allow.
+| Stage | Technology / Model | Function |
+| **Prompting** | **Llama 3 8B (via Unsloth)** | Expands simple topics into professional photographic prompts (lighting, lens, mood). |
+| **Generation** | **SDXL Base 1.0 + Refiner** | Generates latent images |
+| **Upscaling** | **PanModel (BAM)** | Upscales images (x4) while preserving texture and detail |
+| **Tagging** | **Microsoft Florence-2-base** | Performs Dense Captioning to extract SEO-rich keywords and descriptions automatically. |
 
-* **Structured Output File Generation:**
-  The script creates a text file (`dreamstime_upload.txt`) containing all necessary information for upload, including the filename, generated title, full description, user-provided categories, and extracted keywords for each image. The file format is structured to facilitate import into Dreamstime’s bulk upload tools.
+## Project Structure
 
-* **Simple User Interface:**
-  The script includes interactive prompts for the user to provide the image folder path and desired categories, making the process accessible even to those without deep technical knowledge.
+```text
+GenAI-Stock-Pipeline/
+│
+├── src/
+│   ├── generate.py      
+│   ├── upscale.py       
+│   └── tagger.py      
+│── notebook/
+│   ├── notebook.ipynb 
+├── requirements.txt     # Dependencies
+├── README.md            # Documentation
+└── LICENSE      # MIT License
+```
 
-**Demonstrated Skills:**
-This project showcases my abilities in:
+Installation
 
-* Integration of AI models (Computer Vision and Natural Language Processing)
-* Use of advanced libraries such as Transformers (Hugging Face) and spaCy
-* Implementation of performance optimization techniques via parallel processing (threading)
-* Development of automation solutions for specific workflows
-* Object-Oriented Programming (through the DreamstimeUploadAutomator class structure)
-* Error handling and user interaction
+Install dependencies:
+Note: A GPU with at least 16GB VRAM is recommended for the full pipeline.
 
-**Conclusion:**
-This Dreamstime upload automator represents a practical and efficient solution for those looking to optimize the image submission process, harnessing the power of artificial intelligence to generate relevant information and resource optimization for faster processing.
+```bash
+pip install -r requirements.txt
+```
 
+Usage
+Phase 1: Generation (generate.py)
+Generate high-quality prompts and images based on a simple topic.
+
+```bash
+python src/generate.py --topic "Futuristic sustainable city with greenery" --count 5 --steps 40
+Outputs: Images saved to ./output_images
+```
+
+Phase 2: Upscaling (upscale.py)
+Increase image resolution (e.g., x4) for stock submission requirements.
+
+```bash
+python src/upscale.py --input "./output_images" --output "./upscaled" --scale 4
+```
+
+Phase 3: Analysis & Tagging (analyze.py)
+Generate titles, descriptions, and keywords. Exports a .csv file ready for bulk upload.
+
+```bash
+python src/analyze.py --input "./upscaled" --categories "Technology" "Abstract" "Business"
+Outputs: dreamstime_metadata.csv and dreamstime_metadata.txt
+```
+
+⚠️ Disclaimer & Ethics
+This tool is intended to assist creators. When uploading to stock platforms (Dreamstime, Adobe Stock, Shutterstock, etc.):
+Always comply with the platform's AI Content Policy.
+Ensure you mark assets as "Generated by AI".
+Review generated keywords to ensure accuracy.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+##  Notebooks
+
+This repository includes Jupyter Notebook versions of the pipeline, optimized for experimentation and visualization
