@@ -93,8 +93,8 @@ This repository includes Jupyter Notebook versions of the pipeline, optimized fo
 This pipeline is currently deployed in a real-world production environment, powering the **Irene Hadras** stock photography portfolio.
 
 **Real-World Performance Metrics:**
-* **Scale:** Over **140,000 assets** generated and processed in < 6 months.
-* **Quality Assurance:** Achieved a **96.9% Acceptance Ratio** on strict stock platforms (Dreamstime), validating the effectiveness of the SDXL Refiner + PanModel Upscaling chain.
+* **Scale:** Over **250,000 assets** generated and processed in < 6 months.
+* **Quality Assurance:** Achieved a **97.9% Acceptance Ratio** on strict stock platforms (Dreamstime), validating the effectiveness of the SDXL Refiner + PanModel Upscaling chain.
 * **Commercial Viability:** Proven sales record and market fit for AI-generated assets with automated SEO.
 
 [👉 View the Live Portfolio on Dreamstime](https://pt.dreamstime.com/irenemadras_info)
